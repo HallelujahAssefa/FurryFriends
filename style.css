@@ -1,0 +1,287 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  
+}       
+body {
+    width: 100vw;
+    height: 100vh;
+    /* background-color:#2e98d2; */
+    background-color: #ebd9c9;
+    max-width: 100%;
+    overflow-x: hidden;  
+}
+
+/* header */
+
+header{
+background: linear-gradient(rgba(199, 204, 214, 0.3),rgba(255, 241, 160, 0.3)), url("./images/dogheaders.jpg") center/cover no-repeat;
+height: 100vh;
+width: 100vw;
+text-align: center;
+position: relative;
+}
+.furry{
+    text-align: center;
+    background-color: white;
+    font-size: 30px; 
+    color: #2e98d2;
+    position: relative;
+}
+.dog{
+    position: absolute;
+    width: 250px;
+    top: -50%;
+  left: 15%;
+    transform: rotate(27deg);
+}
+/* .headerImge{
+    background: linear-gradient(rgba(199, 204, 214, 0.3),rgba(255, 241, 160, 0.3)), url("./images/dogheaders.jpg") center/cover no-repeat;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    position: relative;
+} */
+.headerTitle{
+    font-family: "Lilita One", serif;
+    text-align: center;
+    color: #87CEFF;
+    font-size: 80px;
+    background-color: rgba(235,217,201,0.3);
+    letter-spacing: 8px;
+  
+    
+}
+ 
+.curvedUpper {
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: -1%;
+}
+/* main */
+main{
+    margin-top: 20px;
+
+ /* background-color: #87CEFF; */
+ 
+}
+label{
+font-size: 30px;
+
+}
+.select {
+     text-align: center; 
+     color: white;
+     font-family: 'Poppins', sans-serif;
+    
+}
+.list{
+    position: relative;
+}
+.customArrow {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 37.1%;
+    height: 100%;
+    width:3em ;
+    background:#87CEFF; 
+    pointer-events: none;
+}
+.customArrow::before,
+.customArrow::after {
+ content: '';
+ position: absolute;
+ width: 0;
+ height: 0;
+ left: 50%;
+ transform: translate(-50%,-50%);
+}
+.customArrow::before{
+    border-left: .45em solid transparent;
+    border-right: .45em solid transparent;
+    border-bottom: .45em solid white;
+    top: 35%;
+}
+.customArrow::after{
+    border-left: .45em solid transparent;
+    border-right: .45em solid transparent;
+    border-top: .45em solid white;
+    top: 60%;
+}
+.label{
+  display: block;
+  letter-spacing: 0.1rem;
+  font-size: 30px;
+  font-family: "Lilita One", serif;
+  margin-bottom: 30px;
+}
+#breeds{
+border: none;
+font-size: 20px;
+width: 330px;
+border: 0px;
+border-bottom: 0px;
+border-radius: 3px;
+box-shadow: 0px 1em 2em -1.5em rgba(0, 0, 0, .5);
+color:#b4d4fa;
+padding: 10px;
+cursor: pointer;
+background:white;
+font-family: "Lilita One", serif;
+text-transform: uppercase;
+}
+
+.slider {
+    text-align: center;
+    background-color:rgba(235,217,201,0.3);
+    width: 100vw;   
+    height: 500px; 
+}
+
+.slideshow {
+    margin: 20px;
+    height: 460px;
+    display: none;
+
+}
+.description {
+/* font-family: 'Poppins', sans-serif;
+font-size: 40px;
+color: white; */
+display: none;
+margin-top: 10px;
+font-size: 20px;
+padding: 10px; 
+margin: auto;
+/* margin-bottom: 50px; */
+background: white;
+border: none;
+color: #87CEFF;
+cursor: pointer;
+}
+
+.modalPopup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: 200ms ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    /* display: none; */
+}
+.modalPopup.open{
+    transform: translate(-50%,-50%) scale(1);
+}
+.modalPopup.close{
+    transform: translate(-50%,-50%) scale(0);
+}
+.contentModal{  
+    display: flex;
+    position: relative;
+    background-color: #ffff;
+    padding-top:0 ;
+    border-radius: 5px;
+    padding-left: 0px;
+    height: 517px;
+    background: linear-gradient(rgba(1, 144, 197,1),rgba(163, 202,241, 1));
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
+}
+
+.fa-times{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    font-size: 20px;
+    opacity: .8;
+    cursor: pointer;
+
+}
+.contentModal h1 {
+    font-family: 'Otomanopee One', sans-serif;
+  text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    margin: 40px 0 20px 0;
+    padding: 16px;
+    color: #ebd9c9;
+}
+
+.contentModal p {
+text-align: center;
+font-size: 25px;
+text-transform: uppercase;
+color:white;
+
+}
+.curved{
+    text-align: center;
+    width:100%;
+    height: 100px;
+}
+.curved svg{
+    width:500px;
+    height: 400px;
+  
+}
+.curved path {
+    fill: transparent;
+    
+  }
+.curved text {
+    fill: #ffff;
+    font-size: 23px;
+    width: 100%;
+    text-align: center;
+   font-family: 'Otomanopee One', sans-serif;
+  }
+  .button{
+      margin-top:20px;
+      text-align: center;
+      width: 100%;
+  }
+  .closeButton{
+      text-align: center;
+      padding: 10px;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+      color: #2e98d2;
+      margin-top: 30px;
+      width: 80%;
+      text-transform: uppercase;
+  }
+/* footer */
+footer {
+    margin-top: 80px;
+    background-color: white;
+    font-family: "Lilita One", serif;
+  
+   
+}
+.footerContainer {
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    padding: 50px 30px;
+background-color: rgba(235,217,201,0.3);
+color: #87CEFF;
+}
+.f1 ,.f2 ,.f3 {
+    text-align: center;
+}
+.footerContainer p {
+    font-weight: 200;
+}
+
+.hours{
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+.pInline a {
+color: #87CEFF;
+font-size: 15px;
+text-decoration: none;
+}

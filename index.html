@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOG FETCH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="furry">
+            <h1 class="headerTitle">furry friends</h1>
+            <img class="dog"
+                src="./images/labrador-retriever-little-doggy-plying-posing-isolated-white-wall-pet-s-love-funny-emotions-concept-copyspace-ad-posing-cute-active-pet-motion-action-removebg-preview-removebg-preview.png"
+                alt="">
+        </div>
+        <div class="curvedUpper">
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ebd9c9" fill-opacity="1"
+                    d="M0,0L48,37.3C96,75,192,149,288,176C384,203,480,181,576,176C672,171,768,181,864,154.7C960,128,1056,64,1152,64C1248,64,1344,128,1392,160L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+    </header>
+    <main>
+        <div class="select">
+            <label class="label" for="breeds">
+                <h1>MEET OUR DIVERSE FAMILY</h1>
+            </label>
+            <div class="list">
+                <select id="breeds" required>
+
+                </select>
+                <span class="customArrow"></span>
+            </div>
+        </div>
+        <div class="slider">
+            <img class="slideshow">
+            <button class="description" onclick="next()">click to view more</button>
+            <br>
+        </div>
+        <div class="modalPopup">
+
+            <div class="contentModal">
+                <div class="image">
+                    <span>
+                        <img src="./images/pexels-rodnae-productions-7516468.jpg" alt="" width="345">
+                    </span>
+                </div>
+                <div class="text">
+                    <i class="fas fa-times"></i>
+                    <div class="curved">
+                        <svg viewBox="0 0 500 500">
+                            <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+                            <text width="500">
+                                <textPath xlink:href="#curve">
+                                    welcome to our furry community! </textPath>
+                            </text>
+                        </svg>
+                    </div>
+
+                    <h1>Did you just adopt one of our furry friends?</h1>
+                    <p> get familiar with our community!</p>
+                    <div class="button">
+                        <button class="closeButton"> get connected </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="footerContainer">
+            <div class="f1">
+                <h4>dallas, texas</h4>
+                <p>123 Main Street</p>
+                <p>123-445-9903</p>
+            </div>
+            <div class="f2">
+                <h4>hours</h4>
+                <p>Sunday-Thursday</p>
+                <p class="hours">9:00AM - 7:30PM</p>
+                <p>Saturday-Friday</p>
+                <p class="hours">11:00AM - 7:30PM</p>
+            </div>
+            <div class="f3">
+                <h4>Contact Us</h4>
+                <p class="pInline"><a href="mailto:email@example.com">Email us</a></p>
+                <p class="pInline"><a href="tel:+1800550005">Call us</a></p>
+            </div>
+
+        </div>
+    </footer>
+
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
